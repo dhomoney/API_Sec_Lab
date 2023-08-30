@@ -6,3 +6,4 @@ bigip-ltm-01    ansible_host=10.50.0.13 ansible_user=labuser
 
 [akamai]
 akamai-api-sec  ansible_host=10.50.0.10 ansible_user=labuser
+
