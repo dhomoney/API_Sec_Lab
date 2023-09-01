@@ -1,7 +1,7 @@
 import requests
 import time
 
-host = 'http://<HOST_UP>'
+host = 'http://192.168.100.45:5000'
 file1 = open('./files/FuzzLists/passwordlist.txt', 'r')
 file2 = open('./files/FuzzLists/loginusernames.txt', 'r')
 PasswordList = file1.read().splitlines()
