@@ -2,8 +2,8 @@ import requests
 import time
 
 host = 'http://<HOST_UP>'
-file1 = open('./passwordlist.txt', 'r')
-file2 = open('./loginusernames.txt', 'r')
+file1 = open('~/API_Sec_Lab/files/FuzzLists/passwordlist.txt', 'r')
+file2 = open('~/API_Sec_Lab/files/FuzzLists/loginusernames.txt', 'r')
 PasswordList = file1.read().splitlines()
 LoginUserList = file2.read().splitlines()
 
