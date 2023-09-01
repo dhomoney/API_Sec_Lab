@@ -2,8 +2,8 @@ import requests
 import time
 
 host = 'http://192.168.100.45:5000'
-file1 = open('./files/FuzzLists/passwordlist.txt', 'r')
-file2 = open('./files/FuzzLists/loginusernames.txt', 'r')
+file1 = open('./files/FuzzLists/passwords_long.txt', 'r')
+file2 = open('./files/FuzzLists/usernames.txt', 'r')
 PasswordList = file1.read().splitlines()
 LoginUserList = file2.read().splitlines()
 
