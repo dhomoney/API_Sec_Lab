@@ -1,7 +1,7 @@
 import requests
 
 host = 'http://10.50.100.45:5000/'
-file1 = open('~/API_Sec_Lab/files/FuzzLists/dirbuster-quick.txt', 'r')
+file1 = open('./files/FuzzLists/dirbuster-quick.txt', 'r')
 Lines = file1.read().splitlines()
 
 count = 0
