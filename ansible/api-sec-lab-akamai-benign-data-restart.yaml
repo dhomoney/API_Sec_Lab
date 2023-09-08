@@ -5,4 +5,4 @@
   tasks:
 
     - name: Start benign data
-      ansible.builtin.command: "~/wwt-lab-files/benign-data.sh"
+      ansible.builtin.shell: "~/wwt-lab-files/benign-data.sh"
