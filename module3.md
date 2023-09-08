@@ -1,11 +1,22 @@
 # Module 3
 
 
+### Exercise 3.1 - Lab Setup
+
+First we need to run a few commands setup our jump host. 
+
+1. Open a terminal
+2. Type `git clone https://github.com/dhomoney/API_Sec_lab.git` 
+3. This will clone the GitHub repo for the lab onto the jump host. 
+4. Type `cd API_Sec_Lab` and hit enter
+5. Type `ansible-playbook -i ./ansible/hosts -K `
+
+
 ### Exercise 3.1 - Resource Enumeration
 
 Resource enumeration enable attackers to find endpoints and increase the attack surface available to them. This could be done using small targeted word lists. In the lab below we will run this attack againt VAmPI, a industry standard vulnerable API. 
 
-1. We are going to use the fuzz list for this. We are using xer0dayz [xer0dayz' Github](https://github.com/1N3) which is located in the ~/API_Sec_Lab/IntruderPayloads/dirbuster-quick.txt
+1. We are going to use the fuzz list for this. We are using xer0dayz [xer0dayz' Github](https://github.com/1N3) which is located in the ~/API_Sec_Lab/files/FuzzLists/dirbuster-quick.txt
 2. Let's look how easy this is by looking at the script that we will run to execute this attack. Type the following command `cat ~/resource_enum.py`. The code should look like this:
 
         import requests
