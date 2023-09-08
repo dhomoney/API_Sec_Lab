@@ -1,0 +1,8 @@
+---
+- name: Ensure benign data is being generated
+  hosts: akamai
+
+  tasks:
+
+    - name: Start benign data
+      ansible.builtin.command: "~/API_Sec_Lab/files/benign-data.sh"

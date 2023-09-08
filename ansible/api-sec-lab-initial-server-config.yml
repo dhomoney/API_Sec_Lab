@@ -82,6 +82,7 @@
         image: docker-registry.neosec.com/vampi:latest
         name: vampi01
         state: started
+        restart_policy: always
         ports:
           - "5000:5000"
     
@@ -90,5 +91,6 @@
         image: docker-registry.neosec.com/vampi:latest
         name: vampi02
         state: started
+        restart_policy: always
         ports:
           - "5001:5000"
